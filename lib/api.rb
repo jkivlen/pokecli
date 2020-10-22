@@ -1,7 +1,9 @@
 class API
 
     def self.fetch_pokemon
+        
         url = "https://pokeapi.co/api/v2/pokemon/ditto"
+        binding.pry
         response = HTTParty.get(url)
         parsed = response.parsed_response
         abilities = parsed["abilities"]
