@@ -2,7 +2,7 @@ class CLI
 
     def start
         puts "Welcome"
-        API.fetch_product
+        API.fetch_pokemon
 
     end
 

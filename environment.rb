@@ -5,5 +5,5 @@ require_relative "./lib/pokemon.rb"
 
 require 'pry'
 require 'net/http'
-# require 'httparty'
+require 'httparty'
 require 'json'
