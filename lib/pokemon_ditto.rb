@@ -1,5 +1,5 @@
-class Pokemon_Ditto
-    attr_accessor :abilities, :game_indices, :held_items, :moves, :versions, :stats
+class Ditto
+    attr_accessor :abilities, :game_indices, :held_items, :moves, :versions, :stats, :name, :url, :is_hidden, :slot
 
     @@all = []
 
@@ -15,3 +15,5 @@ class Pokemon_Ditto
 
 
 end
+
+
