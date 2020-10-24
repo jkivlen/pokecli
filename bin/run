@@ -4,5 +4,4 @@ require_relative "../environment.rb"
 
 puts "hi"
 
-cli_instance = CLI.new
-cli_instance.start
+CLI.new.start
