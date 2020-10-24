@@ -1,6 +1,6 @@
 class API
 
-    def self.fetch_pokemon_ditto
+    def self.catch_pokemon_ditto
         
         url = "https://pokeapi.co/api/v2/pokemon/ditto"
         
@@ -13,14 +13,13 @@ class API
         stats_list = parsed["stats"]
     
 
-        abilities_list.each do |abilities_hash|
-          abilities = Ditto.new
-          abilities.name = abilities_hash["ability"]["name"]
-          abilities.url = abilities_hash["ability"]["url"]
-          abilities.is_hidden = abilities_hash["is_hidden"]
-          abilities.slot = abilities_hash["slot"]
-        end
-        binding.pry    
+        abilities_list.each do |ditto_hash|
+          ditto1 = Ditto.new
+          ditto1.ability_name = ditto_hash["ability"]["name"]
+          ditto1.ability_url = ditto_hash["ability"]["url"]
+          ditto1.ability_is_hidden = ditto_hash["is_hidden"]
+          ditto1.ability_slot = ditto_hash["slot"]
+        end    
         Ditto.all
     end
 

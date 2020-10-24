@@ -1,5 +1,5 @@
 class Ditto
-    attr_accessor :abilities, :game_indices, :held_items, :moves, :versions, :stats, :name, :url, :is_hidden, :slot
+    attr_accessor :ability_name, :ability_url, :ability_is_hidden, :ability_slot
 
     @@all = []
 
