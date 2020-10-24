@@ -14,11 +14,8 @@ class API
           ditto1.game_index = ditto_hash["game_index"]
           ditto1.game_name = ditto_hash["version"]["name"]
           ditto1.game_url = ditto_hash["version"]["url"]
-      end
+        end
         
-
-
-
 
     end
 
