@@ -41,19 +41,19 @@ class CLI
 
         until user_input.between?(0, Ditto.all.length - 1)
             puts "Sorry invalid input.  Choose a valid number"
-            user_input = gets.strip.to_i -1
+            user_input = gets.strip.to_i - 1
         end
 
         ditto_instance = Ditto.all[user_input]    
         display_game_details(ditto_instance)
     end
 
-    def display_game_details(ditto)
+    def display_game_details(ditto_instance)
         sleep(1)
             
-        puts ditto.game_name.capitalize
-        puts "Game Index: #{ditto.game_index}"
-        puts "Game URL: #{ditto.game_url}"
+        puts ditto_instance.game_name.capitalize
+        puts "Game Index: #{ditto_instance.game_index}"
+        puts "Game URL: #{ditto_instance.game_url}"
 
     end
 
